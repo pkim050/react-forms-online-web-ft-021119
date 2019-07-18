@@ -3,13 +3,13 @@ class ControlledInput extends React.Component {
   state = {
     value: '',
   }
- 
+
   handleChange = event => {
     this.setState({
       value: event.target.value,
     });
   }
- 
+
   render() {
     return (
       <form onSubmit={event => this.handleSubmit(event)}>
@@ -22,5 +22,5 @@ class ControlledInput extends React.Component {
     );
   }
 }
- 
+
 export default ControlledInput;
